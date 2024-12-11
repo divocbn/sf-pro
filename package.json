@@ -1,10 +1,12 @@
 {
   "name": "sf-pro",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Apple's San Francisco Pro font.",
-  "main": "./font/sf-pro.ts",
   "type": "module",
-  "module": "./font/sf-pro.ts",
+  "exports": {
+    "./display": "./font/display.ts",
+    "./text": "./font/text.ts"
+  },
   "keywords": [
     "sf-pro",
     "san-francisco-pro",
@@ -17,11 +19,5 @@
   "license": "SIL OPEN FONT LICENSE",
   "peerDependencies": {
     "next": ">=13.2.0"
-  },
-  "typesVersions": {
-    "*": {
-      "display": ["./font/display.ts"],
-      "text": ["./font/text.ts"]
-    }
   }
 }
